@@ -17,7 +17,7 @@ export default new Router()
 
   // PDP page
 
-  .match('/:path*', shoppingFlowRouteHandler)
+  // .match('/:path*', shoppingFlowRouteHandler)
 
   // CSS file
   // .match('/sites/coopervision.com/files/css/:path*', ({ cache, proxy }) => {
@@ -33,10 +33,10 @@ export default new Router()
   // })
 
   // example route for cacheable assets:
-  .match('/admin/uploads/:path*', ({ cache, proxy }) => {
-    cache(CACHE_ASSETS)
-    return proxy('origin')
-  })
+  // .match('/admin/uploads/:path*', ({ cache, proxy }) => {
+  //   cache(CACHE_ASSETS)
+  //   return proxy('origin')
+  // })
 
   .match('/service-worker.js', ({ serviceWorker }) => serviceWorker('dist/service-worker.js'))
   // .match('/service-worker.js', ({ serviceWorker }) => serviceWorker('./service-worker.js'))

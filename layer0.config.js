@@ -3,8 +3,8 @@ module.exports = {
   connector: '@layer0/starter',
   backends: {
     origin: {
-      domainOrIp: 'viveport.com',
-      hostHeader: 'viveport.com',
+      domainOrIp: 'www.viveport.com',
+      hostHeader: 'www.viveport.com',
     },
   },
 }
